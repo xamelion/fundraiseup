@@ -1,6 +1,7 @@
 import { Controller, Post, Req } from '@nestjs/common';
-import { TrackDto } from './dto/track.dto';
 import * as rawBody from 'raw-body';
+
+import { TrackDto } from './dto/track.dto';
 import { TrackService } from './track.service';
 
 @Controller()

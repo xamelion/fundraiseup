@@ -1,6 +1,7 @@
 import { NestFactory } from '@nestjs/core';
-import { TrackerModule } from './projects/tracker/tracker.module';
+
 import { WebModule } from './projects/web/web.module';
+import { TrackerModule } from './projects/tracker/tracker.module';
 
 async function bootstrap() {
   const web = await NestFactory.create(WebModule);
